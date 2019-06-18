@@ -22,12 +22,12 @@ var pluckFirstLineFromFile = function (filePath, cb) {
 var getStatusCode = function (url, cb) {
   // TODO
   request(url, (err, response, body) => {
-      if(err) {
-        cb(err, null)
-      } else {
-        cb(null, response.statusCode)
-      }
-  })
+    if(err) {
+      cb(err, null);
+    } else {
+      cb(null, response.statusCode);
+    }
+  });
 };
 
 
